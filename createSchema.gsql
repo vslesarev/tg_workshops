@@ -132,7 +132,7 @@ CREATE UNDIRECTED EDGE _ENCOUNTER_HAS_PAYER(FROM _Encounter, TO _Payer)
 CREATE UNDIRECTED EDGE _ENCOUNTER_CODE(FROM _Encounter, TO _SnomedCode)
 CREATE UNDIRECTED EDGE _ENCOUNTER_REASON_CODE(FROM _Encounter, TO _SnomedCode)
 
-CREATE Graph @graphname@(_Gender, _Race, _Ethnicity, _Address, _City, _State, _County, _ZipCode, _SnomedCode, _Patient, _Allergies, _Device, _Medication, _Procedures,
+CREATE OR REPLACE Graph MyGraph(_Gender, _Race, _Ethnicity, _Address, _City, _State, _County, _ZipCode, _SnomedCode, _Patient, _Allergies, _Device, _Medication, _Procedures,
                         _Careplans, _Conditions, _Immunizations, _Observations, _Organizations, _Providers, _ImagingStudies, _Payer, _Encounter, _Notes, _Symptoms, _Attribute, _PATIENT_HAS_ATTRIBUTE,
                         _PATIENT_HAS_SYMPTOM, _PATIENT_NOTE, _ADDRESS_CITY, _ADDRESS_COUNTY, _ADDRESS_ZIPCODE, _STATE_HAS_COUNTY, _COUNTY_HAS_CITY, _CITY_HAS_ZIPCODE, _PATIENT_GENDER,
                         _PATIENT_ADDRESS, _PATIENT_RACE, _PATIENT_ETHNICITY, _PATIENT_HAS_ALLERGY, _ENCOUNTER_FOR_ALLERGY, _ALLERGY_CODE,
