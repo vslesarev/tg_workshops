@@ -26,7 +26,7 @@ CREATE VERTEX _Device(PRIMARY_ID UDI_code STRING, description STRING, startDate 
 
 CREATE VERTEX _Medication(PRIMARY_ID medication_id STRING, medication_code STRING, description STRING, startDate DATETIME, endDate DATETIME, baseCost DOUBLE, payerCoverage DOUBLE, dispenses INT, totalCost DOUBLE) WITH primary_id_as_attribute="true"
 
-CREATE VERTEX _Procedures(PRIMARY_ID procedure_id STRING, procedure_code STRING, description STRING, baseCost INT, dateOfProcedure DaTETIME) WITH primary_id_as_attribute="true"
+CREATE VERTEX _Procedures(PRIMARY_ID procedure_id STRING, procedure_code STRING, description STRING, baseCost FLOAT, dateOfProcedure DATETIME) WITH primary_id_as_attribute="true"
 
 CREATE VERTEX _Careplans(PRIMARY_ID careplan_id STRING, description STRING, startDate DATETIME, endDate DATETIME) WITH primary_id_as_attribute="true"
 
